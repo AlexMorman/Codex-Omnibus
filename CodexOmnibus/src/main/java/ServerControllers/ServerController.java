@@ -1,6 +1,8 @@
 package ServerControllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.logging.Logger;
@@ -12,7 +14,7 @@ public class ServerController
 
     public ServerController()
     {
-        goals = "Short Term Goals: Eat Food\nLong Term Goals: Get Ripped";
+        goals = "Eat Food, Get Ripped";
     }
 
     @GetMapping("/")
@@ -27,5 +29,12 @@ public class ServerController
     {
         Application.LOGGER.info("GET Request received on Goals");
         return goals;
+    }
+
+    @PostMapping("/AddGoal")
+    public void addGoals(@RequestBody String newGoal)
+    {
+        Application.LOGGER.info("POST Request on /AddGoals");
+        goals += (", " + newGoal);
     }
 }
