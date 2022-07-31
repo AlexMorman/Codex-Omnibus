@@ -21,3 +21,18 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+.idea/Codex-Omnibus.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+CodexOmnibus/CodexOmnibus.iml
+CodexOmnibus/.idea/workspace.xml
+CodexOmnibus/.idea/vcs.xml
+CodexOmnibus/.idea/uiDesigner.xml
+CodexOmnibus/.idea/misc.xml
+CodexOmnibus/.idea/jarRepositories.xml
+CodexOmnibus/.idea/compiler.xml
+CodexOmnibus/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+CodexOmnibus/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+CodexOmnibus/target/classes/META-INF/CodexOmnibus.kotlin_module
